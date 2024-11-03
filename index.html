@@ -1,11 +1,36 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
+    <title>Inicio</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="/css/index.css">
 </head>
+
 <body>
-    <p>Hola mundo</p>
+    <!-- Inicio Navegaion lateral -->
+    <div id="contenido-lateral" class="navegacion-lateral">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#">Sobre mi</a>
+        <a href="pages/contacto.html">Contacto</a>
+    </div>
+
+    <div id="main">
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+    </div>
+    <!-- FIN Navegacion lateral -->
+    <script>
+        function openNav() {
+            document.getElementById("contenido-lateral").style.width = "250px";
+            document.getElementById("main").style.marginLeft = "250px";
+        }
+
+        function closeNav() {
+            document.getElementById("contenido-lateral").style.width = "0";
+            document.getElementById("main").style.marginLeft = "0";
+        }
+    </script>
 </body>
+
 </html>
