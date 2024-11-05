@@ -5,6 +5,7 @@
     <title>Inicio</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="/css/index.css">
 </head>
 
@@ -12,14 +13,44 @@
     <!-- Inicio Navegaion lateral -->
     <div id="contenido-lateral" class="navegacion-lateral">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="index.html"><b>Inicio</b></a>
         <a href="#">Sobre mi</a>
         <a href="pages/contacto.html">Contacto</a>
+        <a href="https://www.githubstatus.com/">Server Status</a>
     </div>
 
     <div id="main">
         <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
     </div>
     <!-- FIN Navegacion lateral -->
+
+    <!-- INICIO botones Social Media -->
+    <main class="redes">
+        <div class="entorno">
+            <a href="https://x.com/david__1881" class="icon twitter">
+                <div class="tooltip">Twitter</div>
+                <span><i class="fab fa-twitter"></i></span>
+            </a>
+            <a href="https://www.instagram.com/david__1881" class="icon instagram">
+                <div class="tooltip">Instagram</div>
+                <span><i class="fab fa-instagram"></i></span>
+            </a>
+            <a href="https://github.com/DavidCambra18" class="icon github">
+                <div class="tooltip">GitHub</div>
+                <span><i class="fab fa-github"></i></span>
+            </a>
+            <a href="https://www.youtube.com/@xDaViDx-df8tr" class="icon youtube">
+                <div class="tooltip">YouTube</div>
+                <span><i class="fab fa-youtube"></i></span>
+            </a>
+            <a href="#" class="icon twitch">
+                <div class="tooltip">Twitch</div>
+                <span><i class="fab fa-twitch"></i></span>
+            </a>
+        </div>
+    </main>
+    <!-- FIN botones Social Media -->
+
     <script>
         function openNav() {
             document.getElementById("contenido-lateral").style.width = "250px";

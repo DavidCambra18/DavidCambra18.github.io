@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
@@ -14,8 +14,48 @@
 </head>
 
 <body>
+    <!-- Inicio Navegaion lateral -->
+    <div id="contenido-lateral" class="navegacion-lateral">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="/index.html">Inicio</a>
+        <a href="#">Sobre mi</a>
+        <a href="pages/contacto.html"><b>Contacto</b></a>
+        <a href="https://www.githubstatus.com/">Server Status</a>
+    </div>
+
+    <div id="main">
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+    </div>
+    <!-- FIN Navegacion lateral -->
+
+    <!-- FORMULARIO -->
+    <div class="formulario">
+        <form target="_blank" action="https://formsubmit.co/gufoyozu@mailgolem.com" method="POST">
+            <div class="form-group">
+                <div class="form-row">
+                    <div>
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" name="nombre" placeholder="Nombre" required>
+                    </div>
+                    <div>
+                        <label for="email">Email:</label>
+                        <input type="email" name="email" placeholder="Email" required>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <label for="mensaje">Mensaje:</label>
+                </div>
+                <textarea placeholder="Tu mensaje" name="message" rows="4" cols="27" required></textarea>
+            </div>
+            <button type="submit">Enviar formulario</button>
+        </form>
+    </div>
+    <!-- FIN Formulario -->
+
+    <!-- INICIO botones Social Media -->
     <main class="redes">
-        <!-- INICIO botones Social Media -->
         <div class="entorno">
             <a href="https://x.com/david__1881" class="icon twitter">
                 <div class="tooltip">Twitter</div>
@@ -38,8 +78,20 @@
                 <span><i class="fab fa-twitch"></i></span>
             </a>
         </div>
-        <!-- FIN botones Social Media -->
     </main>
+    <!-- FIN botones Social Media -->
+
+    <script>
+        function openNav() {
+            document.getElementById("contenido-lateral").style.width = "250px";
+            document.getElementById("main").style.marginLeft = "250px";
+        }
+
+        function closeNav() {
+            document.getElementById("contenido-lateral").style.width = "0";
+            document.getElementById("main").style.marginLeft = "0";
+        }
+    </script>
 </body>
 
 </html>
