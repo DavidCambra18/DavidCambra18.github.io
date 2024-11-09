@@ -15,3 +15,10 @@
 ### Mejorado
 - Ahora cuando vas al panel de navegacion se coloca en negrita la pagina en la que te encuentras para facilitar la navegacion del usuario.
 - Se mejoro la apariencia del css
+
+
+## [Versión 0.1.6] - 2024-11-09
+### Mejorado
+- Se mejoró la carga de la web
+### Arreglado
+- Se arregló un fallo en la estetica de las redes sociales, que hacia que el texto de la red social no estuviera centrado con el logo.

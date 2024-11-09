@@ -98,6 +98,8 @@
 .entorno .tooltip {
     position: absolute;
     top: 0;
+    left: 50%;
+    transform: translate(-50%);
     line-height: 1.5;
     font-size: 14px;
     background-color: #ffffff;
@@ -177,4 +179,5 @@
 
 .formulario {
     text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
