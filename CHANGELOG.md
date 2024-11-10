@@ -22,3 +22,11 @@
 - Se mejoró la carga de la web
 ### Arreglado
 - Se arregló un fallo en la estetica de las redes sociales, que hacia que el texto de la red social no estuviera centrado con el logo.
+
+
+## [Versión 0.1.8] - 2024-11-11
+### Agregado
+- Se añadio el panel de redes sociales a la pagina de aboutme, todavia sigue en proceso.
+### Mejorado
+- Se mejoró la apariencia del formulario a uno totalmente distinto.
+- Se cambio la fuente de letras del texto de las redes sociales de todas las paginas

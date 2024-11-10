@@ -1,13 +1,71 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Pagina sobre mi">
+    <meta name="author" content="David Cambra">
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"></noscript>
+    <link rel="stylesheet" href="/css/aboutme.css">
     <title>Sobre mi</title>
 </head>
+
 <body>
-    <h3>EN PROCESO...</h3>
-    <br>
-    <a href="/index.html">Volver al INICIO</a>
+    <!-- Inicio Navegaion lateral -->
+    <div id="contenido-lateral" class="navegacion-lateral">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="/index.html">Inicio</a>
+        <a href="/pages/aboutme.html"><b>Sobre mi</b></a>
+        <a href="pages/contacto.html">Contacto</a>
+        <a href="https://www.githubstatus.com/">Server Status</a>
+    </div>
+
+    <div id="main">
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+    </div>
+    <!-- FIN Navegacion lateral -->
+
+    <!-- INICIO botones Social Media -->
+    <main class="redes">
+        <div class="redes-sociales">
+            <a href="https://x.com/david__1881" class="icon twitter">
+                <div class="tooltip">Twitter</div>
+                <span><i class="fab fa-twitter"></i></span>
+            </a>
+            <a href="https://www.instagram.com/david__1881" class="icon instagram">
+                <div class="tooltip">Instagram</div>
+                <span><i class="fab fa-instagram"></i></span>
+            </a>
+            <a href="https://github.com/DavidCambra18" class="icon github">
+                <div class="tooltip">GitHub</div>
+                <span><i class="fab fa-github"></i></span>
+            </a>
+            <a href="https://www.youtube.com/@xDaViDx-df8tr" class="icon youtube">
+                <div class="tooltip">YouTube</div>
+                <span><i class="fab fa-youtube"></i></span>
+            </a>
+            <a href="#" class="icon twitch">
+                <div class="tooltip">Twitch</div>
+                <span><i class="fab fa-twitch"></i></span>
+            </a>
+        </div>
+    </main>
+    <!-- FIN botones Social Media -->
+
+    <script>
+        function openNav() {
+            document.getElementById("contenido-lateral").style.width = "250px";
+            document.getElementById("main").style.marginLeft = "250px";
+        }
+
+        function closeNav() {
+            document.getElementById("contenido-lateral").style.width = "0";
+            document.getElementById("main").style.marginLeft = "0";
+        }
+    </script>
 </body>
+
 </html>

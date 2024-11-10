@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Pagina de contacto">
+    <meta name="author" content="David Cambra">
     <link rel="preconnect" href="https://cdnjs.cloudflare.com">
     <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"></noscript>
@@ -31,34 +32,45 @@
     <!-- FIN Navegacion lateral -->
 
     <!-- FORMULARIO -->
-    <div class="formulario">
-        <form target="_blank" action="https://formsubmit.co/gufoyozu@mailgolem.com" method="POST">
-            <div class="form-group">
-                <div class="form-row">
-                    <div>
-                        <label for="nombre">Nombre:</label>
-                        <input type="text" name="nombre" placeholder="Nombre" required>
+    <div class="formulario contenido">
+        <div class="ventana">
+            <div class="cabecera">
+                <div class="boton">
+                    <div class="boton-cabecera close"></div>
+                    <div class="boton-cabecera maximize"></div>
+                    <div class="boton-cabecera minimize"></div>
+                </div>
+            </div>
+            <div class="contenido-ventana">
+                <div class="screen-body-item left">
+                    <div class="form-titulo">
+                        <span>CONTACTAME</span>
                     </div>
-                    <div>
-                        <label for="email">Email:</label>
-                        <input type="email" name="email" placeholder="Email" required>
+                </div>
+                <div class="screen-body-item">
+                    <div class="app-form">
+                        <div class="app-form-group">
+                            <input class="app-form-control" placeholder="NOMBRE" />
+                        </div>
+                        <div class="app-form-group">
+                            <input class="app-form-control" placeholder="EMAIL" />
+                        </div>
+                        <div class="app-form-group message">
+                            <input class="app-form-control" placeholder="MENSAJE" />
+                        </div>
+                        <div class="app-form-group buttons ">
+                            <button class="app-form-button">ENVIAR</button>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div>
-                <div>
-                    <label for="mensaje">Mensaje:</label>
-                </div>
-                <textarea placeholder="Tu mensaje" name="message" rows="4" cols="27" required></textarea>
-            </div>
-            <button type="submit">Enviar formulario</button>
-        </form>
+        </div>
     </div>
     <!-- FIN Formulario -->
 
     <!-- INICIO botones Social Media -->
     <main class="redes">
-        <div class="entorno">
+        <div class="redes-sociales">
             <a href="https://x.com/david__1881" class="icon twitter">
                 <div class="tooltip">Twitter</div>
                 <span><i class="fab fa-twitter"></i></span>

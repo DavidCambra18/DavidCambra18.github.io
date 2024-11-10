@@ -57,7 +57,12 @@
 
 /* REDES SOCIALES */
 
-@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@font-face {
+    font-family: 'Mogra';
+    src: url('/fonts/Mogra/Mogra-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
 
 * {
     margin: 0;
@@ -71,13 +76,14 @@
     -webkit-tap-highlight-color: transparent;
 }
 
-.entorno {
+.redes-sociales {
     background: rgb(51, 51, 51);
     padding: 50px;
     text-align: center;
+    font-family: 'Mogra';
 }
 
-.entorno .icon {
+.redes-sociales .icon {
     position: relative;
     background-color: #ffffff;
     border-radius: 50%;
@@ -95,7 +101,7 @@
     text-decoration: none;
 }
 
-.entorno .tooltip {
+.redes-sociales .tooltip {
     position: absolute;
     top: 0;
     left: 50%;
@@ -112,7 +118,7 @@
     transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 
-.entorno .tooltip::before {
+.redes-sociales .tooltip::before {
     position: absolute;
     content: "";
     height: 8px;
@@ -124,60 +130,190 @@
     transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 
-.entorno .icon:hover .tooltip {
+.redes-sociales .icon:hover .tooltip {
     top: -45px;
     opacity: 1;
     visibility: visible;
     pointer-events: auto;
 }
 
-.entorno .icon:hover span,
-.entorno .icon:hover .tooltip {
+.redes-sociales .icon:hover span,
+.redes-sociales .icon:hover .tooltip {
     text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
 }
 
-.entorno .twitch:hover,
-.entorno .twitch:hover .tooltip,
-.entorno .twitch:hover .tooltip::before {
+.redes-sociales .twitch:hover,
+.redes-sociales .twitch:hover .tooltip,
+.redes-sociales .twitch:hover .tooltip::before {
     background-color: #9e00fa;
     color: #ffffff;
 }
 
-.entorno .twitter:hover,
-.entorno .twitter:hover .tooltip,
-.entorno .twitter:hover .tooltip::before {
+.redes-sociales .twitter:hover,
+.redes-sociales .twitter:hover .tooltip,
+.redes-sociales .twitter:hover .tooltip::before {
     background-color: #46c1f6;
     color: #ffffff;
 }
 
-.entorno .instagram:hover,
-.entorno .instagram:hover .tooltip,
-.entorno .instagram:hover .tooltip::before {
+.redes-sociales .instagram:hover,
+.redes-sociales .instagram:hover .tooltip,
+.redes-sociales .instagram:hover .tooltip::before {
     background-color: #e1306c;
     color: #ffffff;
 }
 
-.entorno .github:hover,
-.entorno .github:hover .tooltip,
-.entorno .github:hover .tooltip::before {
+.redes-sociales .github:hover,
+.redes-sociales .github:hover .tooltip,
+.redes-sociales .github:hover .tooltip::before {
     background-color: #333333;
     color: #ffffff;
 }
 
-.entorno .youtube:hover,
-.entorno .youtube:hover .tooltip,
-.entorno .youtube:hover .tooltip::before {
+.redes-sociales .youtube:hover,
+.redes-sociales .youtube:hover .tooltip,
+.redes-sociales .youtube:hover .tooltip::before {
     background-color: #de463b;
     color: #ffffff;
 }
-
-/* FIN REDES SOCIALES */
 
 .redes {
     padding-top: 100%;
 }
 
+/* FIN REDES SOCIALES */
+
+
+
+/* FORMULARIO */
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+.contenido {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 12px;
+    letter-spacing: 1.4px;
+}
+
 .formulario {
-    text-align: center;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 10px;
+}
+
+button,
+input {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    letter-spacing: 1.4px;
+}
+
+.ventana {
+    width: 100%;
+    max-width: 700px;
+    background: #3e3e3e;
+    border-radius: 15px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+    overflow: hidden;
+}
+
+.cabecera {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    background: #4d4d4f;
+}
+
+.boton {
+    display: flex;
+    gap: 5px;
+    margin-left: auto;
+}
+
+.boton-cabecera {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+}
+
+.boton-cabecera.close {
+    background: #ed1c6f;
+}
+
+.boton-cabecera.maximize {
+    background: #e8e925;
+}
+
+.boton-cabecera.minimize {
+    background: #74c54f;
+}
+
+.contenido-ventana {
+    display: flex;
+    padding: 50px;
+}
+
+.screen-body-item {
+    flex: 1;
+}
+
+.form-titulo {
+    color: #ea1d6f;
+    font-size: 26px;
+    margin-bottom: 40px;
+    text-align: left;
+}
+
+.app-form-group {
+    margin-bottom: 15px;
+}
+
+.app-form-group.message {
+    margin-top: 40px;
+}
+
+.app-form-group.buttons {
+    text-align: right;
+}
+
+.app-form-control {
+    width: 100%;
+    padding: 10px 0;
+    background: none;
+    border: none;
+    border-bottom: 1px solid #666;
+    color: #ddd;
+    font-size: 14px;
+    outline: none;
+}
+
+.app-form-button {
+    background: none;
+    border: none;
+    color: #ea1d6f;
+    font-size: 14px;
+    cursor: pointer;
+    transition: color 0.2s;
+}
+
+.app-form-button:hover {
+    color: #b9134f;
+}
+
+@media screen and (max-width: 520px) {
+    .screen-body {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .screen-body-item.left {
+        margin-bottom: 30px;
+    }
 }
