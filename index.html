@@ -2,32 +2,50 @@
 <html lang="es">
 
 <head>
-    <title>Inicio</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="David Cambra">
     <meta name="description" content="Pagina web personal">
     <meta name="robots" content="noindex, nofollow">
     <link rel="preconnect" href="https://cdnjs.cloudflare.com">
-    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"></noscript>
-    <link rel="stylesheet" href="/css/index.css">
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" as="style"
+        onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    </noscript>
+    <script src="https://kit.fontawesome.com/fd37345012.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/index.css">
+    <title>Inicio</title>
 </head>
 
 <body>
     <!-- Inicio Navegaion lateral -->
     <div id="contenido-lateral" class="navegacion-lateral">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <a href="index.html"><b>Inicio</b></a>
-        <a href="/pages/aboutme.html">Sobre mi</a>
-        <a href="pages/contacto.html">Contacto</a>
-        <a href="https://www.githubstatus.com/">Server Status</a>
+        <a href="index.html"><b><i class="fa-solid fa-house"></i>&nbsp;Inicio</b></a>
+        <a href="pages/aboutme.html"><i class="fa-solid fa-user"></i>&nbsp;Sobre mi</a>
+        <a href="pages/contacto.html"><i class="fa-solid fa-envelope"></i>&nbsp;Contacto</a>
+        <a href="pages/calendario_economico.html"><i class="fa-solid fa-calendar"></i>&nbsp;Calendario Económico</a>
+        <a href="https://www.githubstatus.com/"><i class="fa-solid fa-server"></i>&nbsp;Server Status</a>
     </div>
 
     <div id="main">
         <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
     </div>
     <!-- FIN Navegacion lateral -->
+
+    <div id="widgets">
+        <div id="clock-container" class="widget">
+            <h2>Hora Actual</h2>
+            <p id="clock"></p>
+        </div>
+        <div id="weather-container" class="widget">
+            <h2>Clima</h2>
+            <p id="weather-info">Cargando...</p>
+        </div>
+    </div>
+    <script src="js/FechaHora.js"></script>
+    <script src="js/tiempo.js"></script>
 
     <!-- INICIO botones Social Media -->
     <main class="redes">
